@@ -4,7 +4,10 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Terminal escape
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+
+-- Copying
 vim.keymap.set("v", "<Leader>c", "\"+y")
 
 -- Netrw
@@ -22,6 +25,9 @@ vim.keymap.set("n", "<Leader>lr", function() vim.wo.relativenumber = true end)
 vim.keymap.set("n", "<Leader>la", function() vim.wo.relativenumber = false end)
 vim.wo.relativenumber = true
 vim.wo.number = true
+
+-- Scrolling
+vim.o.scrolloff = 8
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
