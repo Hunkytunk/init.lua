@@ -11,7 +11,7 @@ vim.keymap.set("v", "<Leader>c", "\"+y")
 vim.keymap.set("n", "<Leader>e", ":Ex<CR>")
 
 -- Terminal
-vim.keymap.set("n", "<Leader>ter", "<C-w>s15<C-w>+<C-w>j:terminal<CR>i")
+vim.keymap.set("n", "<Leader>ter", "<C-w>s10<C-w>+<C-w>j:terminal<CR>i")
 
 -- Rust debug
 vim.keymap.set("n", "<Leader>rri", "<C-w>jicargo run<CR>")
