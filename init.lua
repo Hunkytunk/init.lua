@@ -9,6 +9,7 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 -- Copying
 vim.keymap.set("v", "<Leader>c", "\"+y")
+vim.keymap.set("n", "<Leader>v", "\"+p")
 
 -- Netrw
 vim.keymap.set("n", "<Leader>e", ":Ex<CR>")
