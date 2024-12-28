@@ -8,8 +8,8 @@ vim.g.maplocalleader = "\\"
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 -- Copying
-vim.keymap.set("v", "<Leader>c", "\"+y")
-vim.keymap.set("n", "<Leader>v", "\"+p")
+vim.keymap.set("v", "<Leader>y", "\"+y")
+vim.keymap.set("n", "<Leader>p", "\"+p")
 
 -- Netrw
 vim.keymap.set("n", "<Leader>e", ":Ex<CR>")
