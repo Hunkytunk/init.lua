@@ -12,7 +12,6 @@ vim.keymap.set("v", "<Leader>y", "\"+y")
 vim.keymap.set("n", "<Leader>p", "\"+p")
 
 -- File explorer
--- vim.keymap.set("n", "<Leader>e", ":Ex<CR>")
 vim.keymap.set("n", "<Leader>e", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Terminal
@@ -54,7 +53,7 @@ require("lazy").setup({
     -- import your plugins
     {"catppuccin/nvim", name = "catppuccin"},
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
-    {"stevearc/oil.nvim" --[[, dependencies = { { "echasnovski/mini.icons", opts = {} } }} --]] }
+    {"stevearc/oil.nvim"}
   },
 })
 
