@@ -11,8 +11,9 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 vim.keymap.set("v", "<Leader>y", "\"+y")
 vim.keymap.set("n", "<Leader>p", "\"+p")
 
--- Netrw
-vim.keymap.set("n", "<Leader>e", ":Ex<CR>")
+-- File explorer
+-- vim.keymap.set("n", "<Leader>e", ":Ex<CR>")
+vim.keymap.set("n", "<Leader>e", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Terminal
 vim.keymap.set("n", "<Leader>ter", "<C-w>s10<C-w>+<C-w>j:terminal<CR>i")
@@ -53,6 +54,7 @@ require("lazy").setup({
     -- import your plugins
     {"catppuccin/nvim", name = "catppuccin"},
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+    {"stevearc/oil.nvim" --[[, dependencies = { { "echasnovski/mini.icons", opts = {} } }} --]] }
   },
 })
 
@@ -64,5 +66,7 @@ require("nvim-treesitter.configs").setup({
 require("catppuccin").setup({
 	flavour = "mocha"
 })
+
+require("oil").setup()
 
 vim.cmd.colorscheme("catppuccin")
