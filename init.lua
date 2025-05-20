@@ -18,8 +18,11 @@ vim.keymap.set("n", "<Leader>e", "<CMD>Oil<CR>", { desc = "Open parent directory
 vim.keymap.set("n", "<Leader>ter", "<C-w>s10<C-w>+<C-w>j:terminal<CR>i")
 
 -- Rust debug
-vim.keymap.set("n", "<Leader>rri", "<C-w>jicargo run<CR>")
-vim.keymap.set("n", "<Leader>rro", "<C-w>jicargo run<CR><C-\\><C-n><C-w>k")
+vim.keymap.set("n", "<Leader>rrri", "<C-w>jicargo run<CR>")
+vim.keymap.set("n", "<Leader>rrro", "<C-w>jicargo run<CR><C-\\><C-n><C-w>k")
+
+-- C++ meson debug
+vim.keymap.set("n", "<Leader>rrm", "<C-W>jimeson compile -Cbuilddir<CR><C-\\><C-n><C-w>k")
 
 -- Line numbers
 vim.keymap.set("n", "<Leader>lr", function() vim.wo.relativenumber = true end)
