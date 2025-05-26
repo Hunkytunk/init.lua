@@ -23,6 +23,7 @@ vim.keymap.set("n", "<Leader>rrro", "<C-w>jicargo run<CR><C-\\><C-n><C-w>k")
 
 -- C++ meson debug
 vim.keymap.set("n", "<Leader>rrm", "<C-W>jimeson compile -Cbuilddir<CR><C-\\><C-n><C-w>k")
+vim.keymap.set("n", "<Leader>rrex", "<C-W>jibuilddir\\program.exe<CR><C-\\><C-n><C-w>k")
 
 -- Line numbers
 vim.keymap.set("n", "<Leader>lr", function() vim.wo.relativenumber = true end)
@@ -32,6 +33,10 @@ vim.wo.number = true
 
 -- Scrolling
 vim.o.scrolloff = 8
+
+-- Set tabs to 2 spaces
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
